@@ -1,0 +1,23 @@
+# Dependencias
+node_modules/
+
+# Variables de entorno
+.env
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+
+# Mac
+.DS_Store
+
+# VS Code
+.vscode/
+
+# Cobertura
+coverage/
+
+# Archivos temporales
+tmp/
+temp/
