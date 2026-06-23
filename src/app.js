@@ -1,9 +1,12 @@
 const express = require('express');
 const cors = require('cors');
 
+const authRoutes = require('./routes/authRoutes');
+
 const app = express();
 
 app.use(cors());
+
 app.use(express.json());
 
 app.get('/', (req, res) => {
@@ -11,8 +14,6 @@ app.get('/', (req, res) => {
         message: 'API Gestor Docente funcionando'
     });
 });
-
-const authRoutes = require('./routes/authRoutes');
 
 app.use('/api/auth', authRoutes);
 
