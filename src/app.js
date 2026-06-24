@@ -7,6 +7,7 @@ const groupRoutes = require('./routes/groupRoutes');
 const studentRoutes = require('./routes/studentRoutes');
 const attendanceRoutes = require('./routes/attendanceRoutes');
 const gradeRoutes = require('./routes/gradeRoutes');
+const reportRoutes = require('./routes/reportRoutes');
 
 const app = express();
 
@@ -25,5 +26,6 @@ app.use('/api/groups', groupRoutes);
 app.use('/api/students', studentRoutes);
 app.use('/api/attendance', attendanceRoutes);
 app.use('/api/grades', gradeRoutes);
+app.use('/api/reports', reportRoutes);
 
 module.exports = app;
