@@ -20,12 +20,12 @@ app.get('/', (req, res) => {
     });
 });
 
-app.use('/api/auth', authRoutes);
-app.use('/api/test', testRoutes);
-app.use('/api/groups', groupRoutes);
-app.use('/api/students', studentRoutes);
-app.use('/api/attendance', attendanceRoutes);
-app.use('/api/grades', gradeRoutes);
-app.use('/api/reports', reportRoutes);
+app.use('/auth', authRoutes);
+app.use('/test', testRoutes);
+app.use('/groups', groupRoutes);
+app.use('/students', studentRoutes);
+app.use('/attendance', attendanceRoutes);
+app.use('/grades', gradeRoutes);
+app.use('/reports', reportRoutes);
 
 module.exports = app;
